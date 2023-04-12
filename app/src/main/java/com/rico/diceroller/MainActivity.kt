@@ -20,6 +20,19 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener{ rollDice() }
 
         rollDice()
+        identitas()
+    }
+
+    /**
+     * Menampilkan identitas ke layar.
+     */
+    private fun identitas() {
+        val nama: TextView = findViewById(R.id.textView1)
+        val nim: TextView = findViewById(R.id.textView2)
+        val kelas: TextView = findViewById(R.id.textView3)
+        nama.text = "Rico Ronaldo"
+        nim.text = "223307081"
+        kelas.text = "1C"
     }
 
     /**
